@@ -14,17 +14,18 @@ class Drink:
         self.price = self.price * (1 - percentage / 100)
 
 
-drink1 = Drink("Latte", 18, "Medium")
-drink2 = Drink("Espresso", 12, "Small")
-drink3 = Drink("Cappuccino", 22, "Large")
+latte = Drink("Latte", 18, "Medium")
+espresso = Drink("Espresso", 12, "Small")
+cappuccino = Drink("Cappuccino", 22, "Large")
 
 
 print("=== Coffee Shop Menu ===")
-print(drink1.display_info())
-print(drink2.display_info())
-print(drink3.display_info())
-drink1.change_price(20)
-drink3.apply_discount(25)
+print(latte.display_info())
+print(espresso.display_info())
+print(cappuccino.display_info())
+latte.change_price(20)
+cappuccino.apply_discount(25)
 print("=== Updated Menu ===")
-print(drink1.display_info())
-print(drink3.display_info())
+print(latte.display_info())
+print(espresso.display_info())
+print(cappuccino.display_info())
